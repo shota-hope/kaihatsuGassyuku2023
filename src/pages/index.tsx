@@ -72,6 +72,8 @@ const Home: NextPage = () => {
 
   const transferZennCoin = async () => {
     await contractFromA.methods.transfer(walletAddressUserB, 1000).send();
+    getBalance("a");
+    getBalance("b");
   };
 
   return (
